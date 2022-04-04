@@ -166,7 +166,7 @@
                     }).then(function (canvas) {
                         var anchorTag = document.createElement("a");
                         document.body.appendChild(anchorTag);
-                        anchorTag.download = tokval + ".png";
+                        anchorTag.download = tokval + ".jpg";
                         anchorTag.href = canvas.toDataURL();
                         anchorTag.target = '_blank';
                         anchorTag.click();
