@@ -1,0 +1,20 @@
+body {
+    margin-left: 12px;
+    margin-top: 12px;
+}
+#btn_convert{
+    margin: 3px 0px;
+}
+#btn-generate{
+    margin:8px 0px;
+}
+.toast-header{
+    margin-top: 30px;
+}
+a{
+    text-decoration: none;
+    color: "#08253f"
+}
+.toast-body{
+    font-size: 15px;
+} 
