@@ -1,178 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <!-- Primary Meta Tags -->
-    <title>QR Generator | Safar</title>
-    <meta name="title" content="QR Generator | Safar">
-    <meta name="description" content="A Custom QR generator for my upcoming project. A multiple value qr generator. This is only for live testing purpose.">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://qr-gen-safar.netlify.app">
-    <meta property="og:title" content="QR Generator | Safar">
-    <meta property="og:description" content="A Custom QR generator for my upcoming project. A multiple value qr generator. This is only for live testing purpose.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/deepakpadhi986/qr-gen-safar/main/content/meta.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://qr-gen-safar.netlify.app">
-    <meta property="twitter:title" content="QR Generator | Safar">
-    <meta property="twitter:description" content="A Custom QR generator for my upcoming project. A multiple value qr generator. This is only for live testing purpose.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/deepakpadhi986/qr-gen-safar/main/content/meta.png">
-
-    <!-- favicon -->
-    <link rel="shortcut icon" href="content/favicon.png" type="image/x-icon">
-    
-    <!-- bootswatch -->
-    <link rel="stylesheet" href="content/bootswatch.css">
-    <style>
-        body {
-            margin-left: 12px;
-            margin-top: 12px;
-        }
-    </style>
-</head>
-<body>
-    <h4 class="text-danger">QR GENERATOR FOR MY UPCOMING PROJECT : )</h4>
-    <p class="text-info">How to Create QR Code for multiple Values ? Here is it!!!</p>
-    <hr>
-    <!-- Token -->
-    <div class="form-group">
-        <label class="form-label col-md-2">Token</label>
-        <div class="col-md-4">
-            <input id="qr-text" type="text" class="form-control" required readonly /><br>
+    <head>
+        <!-- Primary Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QR Generator | Safar</title>
+        <meta name="title" content="QR Generator | Safar">
+        <meta name="description" content="A Custom QR generator for my upcoming project. A multiple value qr generator. This is only for live testing purpose.">
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://qr-gen-safar.netlify.app">
+        <meta property="og:title" content="QR Generator | Safar">
+        <meta property="og:description" content="A Custom QR generator for my upcoming project. A multiple value qr generator. This is only for live testing purpose.">
+        <meta property="og:image" content="https://raw.githubusercontent.com/deepakpadhi986/qr-gen-safar/main/content/meta.png">
+        <meta property="og:image:width" content="1300"/>
+        <meta property="og:image:height" content="630"/>
+        <meta property="og:image:type" content="image/png"/>
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://qr-gen-safar.netlify.app">
+        <meta property="twitter:title" content="QR Generator | Safar">
+        <meta property="twitter:description" content="A Custom QR generator for my upcoming project. A multiple value qr generator. This is only for live testing purpose.">
+        <meta property="og:image" content="https://raw.githubusercontent.com/deepakpadhi986/qr-gen-safar/main/content/meta.png">
+        <meta property="og:image:width" content="1300"/>
+        <meta property="og:image:height" content="630"/>
+        <meta property="og:image:type" content="image/png"/>
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="content/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="content/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="content/favicon/favicon-16x16.png">
+        <link rel="manifest" href="content/favicon/site.webmanifest">
+        <!-- bootswatch -->
+        <link rel="stylesheet" href="content/css/bootswatch.css">
+        <!-- custom css -->
+        <link rel="stylesheet" href="content/css/style.css">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPSDWS46K1"></script>
+        <script src="content/script/gtag.js"></script>
+        <!--  Microsoft clarity    -->
+        <script src="content/script/msc.js"></script>
+    </head>
+    <body>
+        <!-- title -->
+        <h4 class="text-danger">QR GENERATOR FOR MY UPCOMING PROJECT : )</h4>
+        <!-- info -->
+        <p class="text-info">How to Create QR Code for multiple Values ? Here is it!!!</p>
+        <hr>
+        <!-- Token -->
+        <div class="form-group">
+            <label class="form-label col-md-2">Token</label>
+            <div class="col-md-4">
+                <input id="qr-text" type="text" class="form-control" required readonly /><br>
+            </div>
         </div>
-    </div>
-    <!-- Booking Time -->
-    <div class="form-group">
-        <label class="form-label col-md-2">Booking Time</label>
-        <div class="col-md-4">
-            <input id="qr-t" type="text" class="form-control" required readonly /><br>
+        <!-- Booking Time -->
+        <div class="form-group">
+            <label class="form-label col-md-2">Booking Time</label>
+            <div class="col-md-4">
+                <input id="qr-t" type="text" class="form-control" required readonly /><br>
+            </div>
         </div>
-    </div>
-    <!-- Full Name -->
-    <div class="form-group">
-        <label class="form-label col-md-2">Full Name</label>
-        <div class="col-md-4">
-            <input type="text" id="qr-name" class="form-control" required /><br>
+        <!-- Full Name -->
+        <div class="form-group">
+            <label class="form-label col-md-2">Full Name</label>
+            <div class="col-md-4">
+                <input type="text" id="qr-name" class="form-control" required /><br>
+            </div>
         </div>
-    </div>
-    <!-- Mobile Number -->
-    <div class="form-group">
-        <label class="form-label col-md-2">Mobile Number</label>
-        <div class="col-md-4">
-            <input type="number" id="qr-mob" class="form-control" required /><br>
+        <!-- Mobile Number -->
+        <div class="form-group">
+            <label class="form-label col-md-2">Mobile Number</label>
+            <div class="col-md-4">
+                <input type="number" id="qr-mob" class="form-control" required /><br>
+            </div>
         </div>
-    </div>
-    <!-- Vehicle Number -->
-    <div class="form-group">
-        <label class="form-label col-md-2">Vehicle Number</label>
-        <div class="col-md-4">
-            <input type="text" id="qr-vech" class="form-control" required /><br>
+        <!-- Vehicle Number -->
+        <div class="form-group">
+            <label class="form-label col-md-2">Vehicle Number</label>
+            <div class="col-md-4">
+                <input type="text" id="qr-vech" class="form-control" required /><br>
+            </div>
         </div>
-    </div>
-    <!-- Generate -->
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="button" value="Generate QR" onclick="generatehii()" style="margin:8px 0px;"
-                class="btn btn-outline-success" />
+        <!-- Generate -->
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="button" id="btn-generate" value="Generate QR" onclick="generatehii()" class="btn btn-outline-success" />
+            </div>
         </div>
-    </div>
-    <!-- qr canvas -->
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <canvas id="qr-code"></canvas>
+        <!-- qr canvas -->
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <canvas id="qr-code"></canvas>
+            </div>
         </div>
-    </div>
-    <!-- download qr -->
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="button" id="btn_convert" value="Save QR" style="margin: 3px 0px;" class="btn btn-outline-info">
+        <!-- download qr -->
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="button" id="btn_convert" value="Save QR" class="btn btn-outline-info">
+            </div>
         </div>
-    </div>
-    <!--Terms of Booking-->
-    <div class="toast-header" style="margin-top: 30px;" id="terms">
-        <strong class="me-auto">Used Tools</strong>
-        <small>Test : )</small>
-    </div>
-    <div class="toast-body" style="font-size: 15px;">
-        <ul>
-            <li>Tried to get multiple values from user and add it to qr</li>
-            <li><a href="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">JQuery</a></li>
-            <li><a href="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js">QRious</a></li>
-            <li><a href="https://html2canvas.hertzen.com/dist/html2canvas.js">html2canvas</a></li>
-            <li><a href="https://bootswatch.com/sketchy/">Bootswatch Sketchy</a></li>
-        </ul>
-    </div>
-    <hr>
-    <p class="text-warning">QR Generator Designed and developed for testing purpose <a href="https://dnoobnerd.netlify.app/" class="text-primary">© Meeeee</a> also see scanner for this @ <a href="https://qr-scan-safar.netlify.app/" class="text-primary">QR-Scanner</a></p>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
-    <script>
-        //create random token
-        var rand = function () {
-            return Math.random().toString(36).substr(2); // remove `0.`
-        };
-
-        //return random token
-        var token = function () {
-            return rand(); // to make it longer
-        };
-        var tokval = document.getElementById('qr-text').value = token().toUpperCase();
-
-        // Time
-        var today = new Date();
-        var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
-        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-        var dateTime = date + ' ' + time;
-        let dattim = document.getElementById("qr-t");
-        dattim.value = dateTime;
-        var dateval = document.getElementById('qr-t').value;
-
-
-        //generate qr
-        function generatehii() {
-            //token val for input
-            var nameval = document.getElementById('qr-name').value;
-            var mobval = document.getElementById('qr-mob').value;
-            var vechval = document.getElementById('qr-vech').value;
-            var final = "Booking ID: " + tokval + " \n" + "Booking Time: " + dateval + " \n" + "Name: " + nameval + " \n" + "Mobile: " + mobval + " \n" + "Selected Vehicle: " + vechval + " \n" + "FROM SAFAR BOOKING SYSTEM";
-            console.log(final);
-
-            var qr;
-            (function () {
-                qr = new QRious({
-                    element: document.getElementById('qr-code'),
-                    foreground: '#08253f',
-                    background: '#fff',
-                    size: 150,
-                    //qr value of input generated token
-                    value: final
-                });
-                "Hey"
-            })();
-
-            document.getElementById("btn_convert").addEventListener("click", function () {
-                html2canvas(document.getElementById("qr-code"),
-                    {
-                        allowTaint: true,
-                        useCORS: true
-                    }).then(function (canvas) {
-                        var anchorTag = document.createElement("a");
-                        document.body.appendChild(anchorTag);
-                        anchorTag.download = tokval + ".jpg";
-                        anchorTag.href = canvas.toDataURL();
-                        anchorTag.target = '_blank';
-                        anchorTag.click();
-                    });
-            });
-        }
-
-    </script>
-</body>
-
+        <!--Used Tools-->
+        <div class="toast-header" id="terms">
+            <strong class="me-auto">Used Tools</strong>
+            <small>Test : )</small>
+        </div>
+        <div class="toast-body">
+            <ul>
+                <li>Tried to get multiple values from user and add it to qr</li>
+                <li>If you want to create new qr redit its values or refresh the page</li>
+                <li><a href="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">JQuery</a></li>
+                <li><a href="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js">QRious</a></li>
+                <li><a href="https://html2canvas.hertzen.com/dist/html2canvas.js">html2canvas</a></li>
+                <li><a href="https://bootswatch.com/sketchy/">Bootswatch Sketchy</a></li>
+            </ul>
+        </div>
+        <hr>
+        <!-- footer -->
+        <p class="text-warning">QR Generator Designed and developed for testing purpose by<a href="https://dnoobnerd.netlify.app/" class="text-primary"> Meeeee</a> also see scanner for this <a href="https://qr-scan-safar.netlify.app/" class="text-primary">@QR-Scanner</a></p>
+        <!-- jquery cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- qrious cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+        <!-- html2canvas cdn -->
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+        <!-- custom script -->
+        <script src="content/script/script.js"></script>
+    </body>
 </html>
